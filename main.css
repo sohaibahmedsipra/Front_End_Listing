@@ -1,0 +1,490 @@
+body{
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.top {
+    justify-content: space-between;
+}
+
+.top-image {
+    width: 100%;
+    background-color: rgb(69, 220, 208);
+    background-image: url("./images/bg-header-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+.popup-form {
+    display: none;
+}
+
+.add {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.add:hover {
+    background-color: hsl(180, 29%, 40%);
+}
+
+.popup-form {
+    background-color: rgb(235, 235, 235);
+    color: rgb(1, 1, 1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    border-top: 5px solid hsl(180, 29%, 50%);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+.popup-form h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.popup-form #close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: hsl(0, 0%, 29%);
+}
+
+.popup-form #close:hover {
+    color: hsl(0, 0%, 0%);
+}
+
+.popup-form form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 29%);
+}
+
+.popup-form form input:focus {
+    outline: none;
+}
+
+.popup-form form input[type="submit"] {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.popup-form form input[type="submit"]:hover {
+    background-color: hsl(180, 29%, 40%);
+}
+
+.popup-form form input[type="submit"]:active {
+    background-color: hsl(180, 29%, 30%);
+}
+
+.popup-form form input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.popup-form form input[type="radio"]:checked {
+    background-color: hsl(180, 29%, 50%);
+}
+
+.popup-form form input[type="radio"]:hover {
+    background-color: hsl(180, 29%, 40%);
+}
+
+.popup-form form select {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 29%);
+}
+
+.popup{
+    display: none;
+    background-color: rgb(235, 235, 235);
+    color: rgb(1, 1, 1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    border-top: 5px solid hsl(180, 29%, 50%);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.listings 
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: center;
+    background-color: hsl(180, 52%, 96%);
+}
+
+.listing 
+{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 13px 0px rgba(137, 204, 209, 0.75);
+}
+
+.listing .listing-image 
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.listing img
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.listing .left 
+{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin : 0;
+    width:60%;
+}
+
+.listing .left {
+    margin-right: 20px;
+}
+
+
+
+.listing .left ul 
+{
+    display: flex;
+    flex-direction: row;
+    padding:0;
+    margin:0;
+}
+
+.listing .left ul li 
+{
+    margin-right: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsl(0, 0%, 65%);
+}
+
+.listing .left ul .posted{
+    list-style: none;
+}
+
+.listing .left .left-top 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.listing .left .left-bottom 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.listing .right 
+{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: right;
+
+}
+.listing .right button
+{   
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(180, 29%, 50%);
+    border: none;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.listing .right button:hover
+{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.listing .company
+{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsl(180, 49%, 46%);
+    margin-right: 10px;
+}
+
+.listing .new 
+{
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.listing .featured 
+{
+    background-color: hsl(180, 14%, 20%);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.listing h2
+{
+    font-size: 1.2rem;
+    font-weight: 750;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.top-filter {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    opacity: 0.5;
+    height: 50px;
+}
+
+.top-filter .clear-filter-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.top-filter .clear-filters {
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(61, 135, 140);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.top-filter .clear-filters:hover {
+    text-decoration: underline;
+}
+
+
+.filters 
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.filters .filter 
+{
+    margin-right: 10px;
+    background-color: hsl(185, 80%, 88%);
+    color: hsl(180, 96%, 21%);
+    font-weight: 700;
+    border: none;
+    padding: 5px 0px 5px 10px;
+}
+
+.filters .remove-filter 
+{
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border: none;
+    padding: 3px 10px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+.filters .remove-filter:hover 
+{
+    background-color: hsl(0, 0%, 0%);
+}
+
+.job-popup {
+
+    background-color: rgb(235, 235, 235);
+    color: rgb(1, 1, 1);
+    
+}
+
+.job-popup h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.job-popup .popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: hsl(0, 0%, 29%);
+}
+
+.job-popup .popup-close:hover {
+    color: hsl(0, 0%, 0%);
+}
+
+.job-popup h3 {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsl(180, 49%, 46%);
+    margin-right: 10px;
+}
+
+.job-popup .new {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.job-popup .featured {
+    background-color: hsl(180, 14%, 20%);
+    color: white;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.job-popup button {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.job-popup ul li {
+    margin-right: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsl(0, 1%, 26%);
+}
+
+@media screen and (min-width:200px) and (max-width:780px)
+{
+    .listing{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+
+    .listing h2 {
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .listing .left{
+        margin-bottom: 30px;
+    }
+
+
+    .popup-form{
+        font-size: 10px;
+    }
+
+    .listing .right {
+        border-top: 1px solid hsl(180, 5%, 40%);
+        width: 100%;
+        padding-top: 20px;
+        justify-content: left;
+    }
+
+    .listing .right button{
+        font-size: 10px;
+    }
+
+    .filter {
+        font-size: 10px;
+    }
+}

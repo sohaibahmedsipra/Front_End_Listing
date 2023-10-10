@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/League+Spartan">
+    <title>Frontend | Job Listings | Sohaib Ahmed</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="top">
+        <div class="top-image">
+        </div>
+
+        <div class="top-filter">
+            <div class="filters">
+               
+            </div>
+            <div class="clear-filter-div">
+                <input type="button" class="clear-filters" value="Clear">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="listings">
+
+    </div>
+
+    <input type="button" value="+" id="add" class="add">
+    <div class="popup-form" id="popupForm">
+        <form id="jobForm">
+            <input type="button" value="x" id="close" class="close">
+
+            <h1>Add a new Job to the listings</h1>
+
+
+            <label for="company">Company:</label>
+
+            <select id="company" name="company">
+                <option value="Photosnap">Photosnap</option>
+                <option value="Manage">Manage</option>
+                <option value="Account">Account</option>
+                <option value="MyHome">MyHome</option>
+                <option value="Loop Studios">Loop Studios</option>
+                <option value="FaceIt">FaceIt</option>
+                <option value="Shortly">Shortly</option>
+                <option value="Insure">Insure</option>
+                <option value="Eyecam Co.">Eyecam Co.</option>
+                <option value="The Air Filter Company">The Air Filter Company</option>
+            </select>
+            <br>
+            <label for="position">Position:</label>
+            <input type="text" id="position" name="position" required><br>
+            <label for="contact">Contract:</label><br>
+            <input type="radio" id="contact" name="contact" value="Full-Time" required>
+            <label for="contact">Full-Time</label>
+            <input type="radio" id="contact" name="contact" value="Part-Time" required>
+            <label for="contact">Part-Time</label>
+            <input type="radio" id="contact" name="contact" value="Contract" required>
+            <label for="contact">Contract</label><br>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required><br>
+
+
+            <label for="languages">Languages:</label><br>
+            <input type="checkbox" id="html" name="languages" value="HTML">
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="languages" value="CSS">
+            <label for="css">CSS</label>
+            <input type="checkbox" id="javascript" name="languages" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="python" name="languages" value="Python">
+            <label for="python">Python</label>
+            <input type="checkbox" id="ruby" name="languages" value="Ruby">
+            <label for="ruby">Ruby</label>
+
+            <br>
+
+            <label for="role">Level:</label><br>
+            <input type="radio" id="level" name="level" value="Junior">
+            <label for="junior">Junior</label>
+            <input type="radio" id="level" name="level" value="Midweight">
+            <label for="midweight">Midweight</label>
+            <input type="radio" id="level" name="level" value="Senior">
+            <label for="senior">Senior</label>
+        
+            <br>
+            <label for="role">Role:</label><br>
+            <input type="radio" id="frontend" name="role" value="Frontend">
+            <label for="frontend">Frontend</label>
+            <input type="radio" id="backend" name="role" value="Backend">
+            <label for="backend">Backend</label>
+            <input type="radio" id="fullstack" name="role" value="Fullstack">
+            <label for="fullstack">Fullstack</label>
+
+            <br>
+
+            <label for="tools">Tools:</label><br>
+            <input type="checkbox" id="react" name="tools" value="React">
+            <label for="react">React</label>
+            <input type="checkbox" id="sass" name="tools" value="Sass">
+            <label for="sass">Sass</label>
+            <input type="checkbox" id="ror" name="tools" value="RoR">
+            <label for="ror">RoR</label>
+            <input type="checkbox" id="vue" name="tools" value="Vue">
+            <label for="vue">Vue</label>
+            <input type="checkbox" id="django" name="tools" value="Django">
+            <label for="django">Django</label>
+
+            <br>
+
+            <input type="submit" value="Submit" id="submit" class="submit">
+
+        </form>
+
+    </div>
+
+    <div class="popup">
+
+    </div>
+</body>
+
+</html>
